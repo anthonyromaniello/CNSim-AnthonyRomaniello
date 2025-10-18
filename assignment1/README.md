@@ -16,9 +16,9 @@ A discrete event simulation of a gas station with multiple pumps, customer arriv
    mvn compile
    ```
 
-2. **Run with sample input:**
+2. **Run with sample input attached to the project:**
    
-   **Windows PowerShell:**
+   **Windows PowerShell (or terminal in IDE):**
    ```powershell
    Get-Content input.txt | mvn exec:java
    ```
