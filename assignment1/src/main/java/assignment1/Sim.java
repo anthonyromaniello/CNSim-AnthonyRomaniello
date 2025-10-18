@@ -54,7 +54,7 @@ public static void main(String[] args) throws IOException {
     reportInterval = Double.parseDouble(in.readLine());
     double endingTime = Double.parseDouble(in.readLine());
     int numPumps = Integer.parseInt (in.readLine());
-    System.out.print ("This simulation run uses" + numPumps + " pumps ");
+    System.out.print ("This simulation run uses " + numPumps + " pumps ");
 
     // Initialize the random-number streams.
     System.out.println ("and the following random number seeds:");
@@ -250,7 +250,7 @@ class Statistics {
         else 
             System.out.print ("  Unknown Unknown");
 
-        System.out.print(fmtDbl(totalServiceTime / (Sim.pumpStand.getNumberOfPumps() * Sim.simulationTime), 7, 3));
+        System.out.print(fmtInt(balkingCustomers, 8));
         if (customersServed > 0)
             System.out.print (fmtDbl (totalWaitingTime/customersServed, 9, 3));
         else    

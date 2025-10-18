@@ -23,19 +23,19 @@ A discrete event simulation of a gas station with multiple pumps, customer arriv
    Get-Content input.txt | mvn exec:java
    ```
 
-3. **Run with custom input:**
+3. **Run with custom input (example interval and numbers from tutorial):**
    ```bash
    mvn exec:java
    ```
    Then enter the following values when prompted:
    ```
-   10.0      # Report interval (seconds)
-   100.0     # Simulation end time (seconds)
+   20000     # Report interval (seconds)
+   200000    # Simulation end time (seconds)
    3         # Number of pumps
-   12345     # Random seed for arrivals
-   23456     # Random seed for fuel amounts
-   34567     # Random seed for balking decisions
-   45678     # Random seed for service times
+   1         # Random seed for arrivals
+   2         # Random seed for fuel amounts
+   3         # Random seed for balking decisions
+   4         # Random seed for service times
    ```
 
 ### Option 2: Using Java directly
