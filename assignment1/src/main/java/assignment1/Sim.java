@@ -214,10 +214,20 @@ class Statistics {
 
     /**
      * printHeaders: print column titles for the statistics summaries 
+     * Current - Current simulation time
+     * Total - Total number of cars that have arrived
+     * NoQueue - Fraction of time the queue was empty
+     * Car->Car - Average time between car arrivals
+     * Average - Average litres needed per car
+     * Number - Number of cars that balked (left without service)
+     * Average - Average waiting time for served customers
+     * Pump - Pump utilization rate
+     * Total - Total profit/loss from operations
+     * Lost - Profit lost from customers who balked
      */
     private static void printHeaders () {
-        System.out.println("  Current Total  NoQueue Car->Car Average Number  Average Pump   Total Lost ");
-        System.out.println("    Time   Cars Fraction  Time  Litres Balked   Wait Usage  Profit Profit");
+        System.out.println("  Current Total  NoQueue  Car->Car Average   Number  Average  Pump   Total   Lost ");
+        System.out.println("    Time   Cars  Fraction  Time    Litres    Balked   Wait   Usage  Profit  Profit");
         for (int i = 0; i < 79; i++){
             System.out.print("-");
         }
