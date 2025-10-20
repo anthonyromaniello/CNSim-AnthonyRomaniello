@@ -60,6 +60,7 @@ public class CarQueueTest {
         assertEquals(0, queue.getQueueSize(), "Queue should be empty");
     }
     
+    
     @Test
     void testTakeFromEmptyQueue() {
         Car result = queue.takeFirstCar();
